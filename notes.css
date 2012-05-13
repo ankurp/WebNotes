@@ -1,0 +1,62 @@
+.website-annotation-note {
+    background-color: rgb(255, 240, 70) !important; 
+    padding: 15px !important;
+    position: absolute !important;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) !important;
+    -moz-box-shadow:  0 5px 10px rgba(0, 0, 0, 0.5) !important;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.5) !important;
+}
+.website-annotation-note:hover .closebutton {
+    display: block !important;
+} 
+.website-annotation-note .closebutton {
+    display: none !important;
+    background-image: url(deleteButton.png) !important;
+    height: 30px !important;
+    position: absolute !important;
+    left: -15px !important;
+    top: -15px !important;
+    width: 30px !important;
+}
+.website-annotation-note .closebutton:active {
+    background-image: url(deleteButtonPressed.png) !important;
+}
+.website-annotation-note .edit {
+    outline: none !important;
+	text-align:left !important;
+	font-family:sans-serif !important;
+	font-size:11pt !important;
+	font-style:normal !important;
+	color:#262626 !important;
+}
+.website-annotation-note .footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    font-size: 9px !important;
+    background-color: #db0 !important;
+    color: white !important;
+    border-top: 1px solid #a80 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding-left:5px !important;
+    padding-right:12px !important;
+    padding-top:2px !important;
+    padding-bottom:1px !important;
+}
+.website-annotation-note .footer div.time-stamp {
+    float:right !important;
+    display: inline !important;
+}
+.website-annotation-note .footer div.hide {
+	float:left !important;
+	cursor: pointer !important;
+    display: inline !important;
+}
+.website-annotation-note .resize {
+	position:absolute !important;
+	right:0 !important;
+	bottom:0 !important;
+	height:12px !important;
+	width:12px !important;
+    background-image: url(resize.png) !important;
+}
