@@ -60,22 +60,10 @@
 		  n.text = stuff;
 		  n.editField.contentEditable=false;
       }
-		var isCtrl = false;
-		document.onkeyup=function(e){
-			if(e.which == 17) isCtrl=false;
-		}
-		document.onkeydown=function(e){
-			if(e.which == 17) isCtrl=true;
-			if(e.which == 78 && isCtrl == true) {
-				//run code for CTRL+N
-				newNote();
-				return false;
-			}
-		}
     </script>
   </head>
   <body>
-    <a onclick="newNote();" class="new-note">New Note (Ctrl+N)</a>
+    <a class="new-note">New Note</a>
     <div id="bookmarklet_arrow" style="position: absolute; top: 0px; left: 70px; display:none; width: 159px; height: 207px; background-image: url('arrow.png'); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; z-index: 150; background-position: 0% 0%; background-repeat: no-repeat no-repeat; " ></div>
     <div style="position:absolute;top:160px;">
       <div style="color:#eee;font-size:22px;">Drag to Bookmark Bar to:</div>
