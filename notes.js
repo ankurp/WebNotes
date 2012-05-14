@@ -240,16 +240,9 @@ Note.prototype = {
         if (this != captured)
             return true; 
 
-		var newHeight = e.clientY - this.resizeStartY;
-		var newWidth = e.clientX - this.resizeStartX;
-		if (newHeight < 50) {
-			newHeight = 50;
-		} 
-		if (newWidth < 160) {
-		    newWidth = 160;
-		}
-		this.minHeight = newHeight + 'px';
-		this.minWidth = newWidth + 'px';
+		this.newHeight = Math.min(e.clientY - this.resizeStartY, 50) + 'px';
+		this.newWidth = Math.min(e.clientX - this.resizeStartX, 160) + 'px';
+
         return false;
     },	
  
